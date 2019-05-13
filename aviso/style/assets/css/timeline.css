@@ -1,0 +1,471 @@
+.btn{
+    margin: 15px;
+}
+
+.btn-link{
+    background-color: #ccc;
+}
+
+.btn-link:hover{
+    background-color: #fff;
+}
+
+
+
+
+
+
+section#titulo-timeline{
+    position: relative;
+
+    width: 100%;
+    margin: 20px auto;
+}
+
+section#timeline{
+    position: relative;
+
+    width: 100%;
+    margin: 20px auto;
+}
+
+section#timeline:before{
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 2px;
+    height: 100%;
+    margin: 0 0 0 -1px;
+
+    content: '';
+
+    background: rgba(0, 0, 0, .2);
+}
+
+section#timeline article{
+    position: relative;
+
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+section#timeline article:after{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+section#timeline article div.inner{
+    float: left;
+
+    width: 40%;
+    margin: 5px 0 0 0;
+
+    border-radius: 6px;
+}
+
+section#timeline article div.inner span.date{
+    font-size: 12px;
+    font-weight: 900;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 90px;
+    height: 90px;
+    margin: 0 0 0 -45px;
+    padding: 15px 0;
+
+    text-transform: uppercase;
+
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    background: #1c3d6c;
+    box-shadow: 0 0 0 7px #1c3d6c;
+}
+
+section#timeline article div.inner span.date span{
+    display: block;
+
+    text-align: center;
+}
+
+section#timeline article div.inner span.date span.day{
+    font-size: 16px;
+}
+
+section#timeline article div.inner span.date span.month{
+    font-size: 26px;
+}
+
+section#timeline article div.inner span.date span.year{
+    font-size: 20px;
+}
+
+section#timeline article div.inner h2{
+    font-size: 19px;
+    font-weight: 200;
+
+    position: relative;
+
+    margin: 0;
+    padding: 15px;
+
+    letter-spacing: 0;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-radius: 6px 6px 0 0;
+}
+
+section#timeline article div.inner h2:after{
+    position: absolute;
+    top: 20px;
+    right: -5px; /*naranjas*/
+
+    width: 10px;
+    height: 10px;
+
+    content: '';
+    -webkit-transform: rotate(-45deg);
+}
+
+section#timeline article div.inner div.timeline-body{
+    font-size: 14px;
+
+    margin: 0;
+	padding-bottom:10px;
+	padding-right:10px;
+	padding-left:10px;
+
+
+    color: #000000;
+    /*border: 1px solid;*/
+    /*border-radius: 0 0 6px 6px;*/
+    background: #fff;
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);*/
+}
+
+section#timeline article div.inner div.timeline-footer{
+    font-size: 14px;
+	padding-bottom:10px;
+
+    color: #000000;
+    /*border: 1px solid;*/
+    border-radius: 0 0 6px 6px;
+    background: #fff;
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);*/
+}
+
+
+/*section#timeline article div.inner p:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}*/
+
+section#timeline article:nth-child(2n+2) div.inner{
+    float: left;
+}
+
+section#timeline article:nth-child(2n+2) div.inner h2:after{
+    right: -5px; /*azules*/
+}
+
+section#timeline article:nth-child(2n+1) div.inner{
+    float: right;
+}
+
+section#timeline article:nth-child(2n+1) div.inner h2:after{
+    left: -5px; /*azules*/
+}
+
+@media (max-width: 767px)
+{
+    section#timeline article div.inner h2{
+        font-size: 17px !important;
+    }
+    section#timeline:before{
+        left: 10%;
+    }
+    section#timeline article div.inner{
+        width: 75%;
+    }
+    section#timeline article div.inner span.date{
+        padding: 13px 0;
+        left: 10%;
+    }
+    section#timeline article div.inner span.date span{
+        display: block;
+
+        text-align: center;
+    }
+    section#timeline article:nth-child(2n+1) div.inner{
+        float: right;
+    }
+    section#timeline article:nth-child(2n+2) div.inner{
+        float: right;
+    }
+    section#timeline article:nth-child(2n+1) div.inner h2:after{
+        left: -5px;
+    }
+    section#timeline article:nth-child(2n+2) div.inner h2:after{
+        left: -5px;
+    }
+}
+
+@media (max-width: 450px)
+{
+    section#timeline article div.inner span.date{
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 -25px;
+        padding: 7px 0;
+    }
+    section#timeline article div.inner span.date span.day{
+        font-size: 12px;
+    }
+    section#timeline article div.inner span.date span.month{
+        font-size: 16px;
+    }
+    section#timeline article div.inner span.date span.year{
+        font-size: 12px;
+    }
+}
+
+/*******************************************************/
+
+section#timeline article:nth-child(1) div.inner span.date{
+    background: #f44336;
+    box-shadow: 0 0 0 7px #f44336;
+}
+
+section#timeline article:nth-child(1) div.inner h2{
+    background: #f44336;
+}
+
+section#timeline article:nth-child(1) div.inner h2:after{
+    background: #f44336;
+}
+
+section#timeline article:nth-child(2) div.inner span.date{
+    background: #2196f3;
+    box-shadow: 0 0 0 7px #2196f3;
+}
+
+section#timeline article:nth-child(2) div.inner h2{
+    background: #2196f3;
+}
+
+section#timeline article:nth-child(2) div.inner h2:after{
+    background: #2196f3;
+}
+
+section#timeline article:nth-child(3) div.inner span.date{
+    background: #689f38;
+    box-shadow: 0 0 0 7px #689f38;
+}
+
+section#timeline article:nth-child(3) div.inner h2{
+    background: #689f38;
+}
+
+section#timeline article:nth-child(3) div.inner h2:after{
+    background: #689f38;
+}
+
+section#timeline article:nth-child(4) div.inner span.date{
+    background: #e91e63;
+    box-shadow: 0 0 0 7px #e91e63;
+}
+
+section#timeline article:nth-child(4) div.inner h2{
+    background: #e91e63;
+}
+
+section#timeline article:nth-child(4) div.inner h2:after{
+    background: #e91e63;
+}
+
+section#timeline article:nth-child(5) div.inner span.date{
+    color: #000;
+    background: #ffd600;
+    box-shadow: 0 0 0 7px #ffd600;
+}
+
+section#timeline article:nth-child(5) div.inner h2{
+    color: #000;
+    background: #ffd600;
+}
+
+section#timeline article:nth-child(5) div.inner h2:after{
+    background: #ffd600;
+}
+
+section#timeline article:nth-child(6) div.inner span.date{
+    background: #009688;
+    box-shadow: 0 0 0 7px #009688;
+}
+
+section#timeline article:nth-child(6) div.inner h2{
+    background: #009688;
+}
+
+section#timeline article:nth-child(6) div.inner h2:after{
+    background: #009688;
+}
+
+section#timeline article:nth-child(7) div.inner span.date{
+    background:  #4169E1;
+    box-shadow: 0 0 0 7px #4169E1;
+}
+
+section#timeline article:nth-child(7) div.inner h2{
+    background: #4169E1;
+}
+
+
+section#timeline article:nth-child(7) div.inner h2:after{
+    background: #4169E1;
+}
+
+
+section#timeline article:nth-child(8) div.inner span.date{
+    background: #FFA500;
+    box-shadow: 0 0 0 7px #FFA500;
+}
+
+section#timeline article:nth-child(8) div.inner h2{
+    background: #FFA500;
+}
+
+
+section#timeline article:nth-child(8) div.inner h2:after{
+    background: #FFA500;
+}
+
+
+section#timeline article:nth-child(9) div.inner span.date{
+    background: #2E8B57;
+    box-shadow: 0 0 0 7px #2E8B57;
+}
+
+section#timeline article:nth-child(9) div.inner h2{
+    background: #2E8B57;
+}
+
+
+section#timeline article:nth-child(9) div.inner h2:after{
+    background: #2E8B57;
+}
+
+
+section#timeline article:nth-child(10) div.inner span.date{
+    background: #8B0000;
+    box-shadow: 0 0 0 7px #8B0000;
+}
+
+section#timeline article:nth-child(10) div.inner h2{
+    background: #8B0000;
+}
+
+
+section#timeline article:nth-child(10) div.inner h2:after{
+    background: #8B0000;
+}
+
+
+section#timeline article:nth-child(11) div.inner span.date{
+    background: #8A2BE2;
+    box-shadow: 0 0 0 7px #8A2BE2;
+}
+
+section#timeline article:nth-child(11) div.inner h2{
+    background: #8A2BE2;
+}
+
+
+section#timeline article:nth-child(11) div.inner h2:after{
+    background: #8A2BE2;
+}
+
+
+section#timeline article:nth-child(12) div.inner span.date{
+    background: #000000;
+    box-shadow: 0 0 0 7px #000000;
+}
+
+section#timeline article:nth-child(12) div.inner h2{
+    background: #000000;
+}
+
+
+section#timeline article:nth-child(12) div.inner h2:after{
+    background: #000000;
+}
+
+/**************************/
+
+.fechas
+{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+	padding-top:10px;
+}
+
+.negras
+{
+    font-weight: 700;
+    color: #000;
+}
+
+.negras_altas
+{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.negras_altas_plus
+{
+    font-size: 27px;
+    font-weight: 700;
+}
+
+
+#imagenFlotante
+{
+    position: fixed;
+    z-index: 300;
+    right: 0;
+    bottom: 10px;
+
+    display: none;
+}
+
+@media (max-width: 450px)
+{
+    #imagenFlotante
+    {
+        position: fixed;
+        z-index: 300;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: none;
+
+        height: 50px;
+    }
+    #imagenFlotante .card-3
+    {
+        padding: 0;
+
+        border-radius: 0 !important;
+    }
+}
