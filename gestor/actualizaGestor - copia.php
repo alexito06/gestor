@@ -1,4 +1,5 @@
 <?php
+//comentado y subido a github
 $aditionalHeader = <<<ADHEAD
 	<!-- iCheck -->
 	<link rel="stylesheet" href="../plugins/iCheck/skins/all.css">
