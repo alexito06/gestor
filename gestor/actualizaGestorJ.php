@@ -332,6 +332,7 @@ $(function () {
 
 // Add event listener for opening and closing details
     $('#getSolicitudes tbody').on('click', 'td.details-control', function () {
+    	console.log('entra');
         var tr = $(this).closest('tr');
         var row = table.row( tr );
  
