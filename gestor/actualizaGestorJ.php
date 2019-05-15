@@ -301,6 +301,7 @@ $(function () {
 						/************Filtrar Tabla************/
 
 						$('#getSolicitudes').DataTable({
+							alert('entra');
 							"responsive": true,
 							"destroy": true,
 							"scrollX": true,
