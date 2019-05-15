@@ -319,16 +319,16 @@ $(function () {
 								"LoadingRecords": "Cargando ...",
 								"Processing": "Procesando...",
 								"SearchPlaceholder": "Comience a teclear...",
-							"paginate": {
-								"previous": "Anterior",
-								"next": "Siguiente", 
+								"paginate": {
+									"previous": "Anterior",
+									"next": "Siguiente", 
+								},
 							},
 							"columns": [
 								{
 									"className":	'details-control'
 								},
 							]
-							}
 						});
 
 // Add event listener for opening and closing details
